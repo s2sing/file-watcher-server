@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>aa</title>
+</head>
+<body>
+<div>접속중인 세션 키</div>
+<div th:each="key : ${users.keySet()}">
+    <div th:text="${key}"></div>
+</div>
+</body>
+</html>
